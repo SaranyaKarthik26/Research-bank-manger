@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Dashboard</title>
+<!-- Bootstrap -->
+<link href="../../HTML Practice/Practice/Bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="newdashboard.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+<body>
+<div id="titleContainer" class="container-fluid">
+  <div class="row">
+    <h3 class="text-left col-md-6">Edenz Reasearch Bank Manager</h3>
+  </div>
+</div>
+
+<!-- NavBar -->
+
+<nav id="navigationBar" class="navbar navbar-inverse">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#inverseNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="#"></a></div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="inverseNavbar1">
+      <ul class="nav navbar-nav">
+        <!--<li class="active"><a href="#">Link<span class="sr-only">(current)</span></a></li>-->
+        <li><a href="newdashboard.html" ><img border="0" alt="dashboard" src="image/dashboard.png" data-toggle="tooltip" data-placement="bottom" title="Dashboard"></a></li>
+        <li><a href="adduser.html"><img border="0" alt="adduser" src="image/add-user.png" data-toggle="tooltip" data-placement="bottom" title="Add User"> </a></li>
+        <li><a href="edituser.html"><img border="0" alt="edituser" src="image/edit-user.png" data-toggle="tooltip" data-placement="bottom" title="Edit User"> </a></li>
+        <li><a href="add document.html"><img border="0" alt="adddoc" src="image/add-docs32.png" data-toggle="tooltip" data-placement="bottom" title="Add Document"> </a></li>
+        <li><a href="edit document.html"><img border="0" alt="editdoc" src="image/edit-docs.png" data-toggle="tooltip" data-placement="bottom" title="Edit Document"> </a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Login.html"><img border="0" alt="Logout" src="image/logout-32.png" data-toggle="tooltip" data-placement="bottom" title="Logout"> </a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<main class="container-fluid">
+  <div class="container">
+    <div class="col-md-4" id="col-left">
+      <div class="row">
+        <h4 class="text-left">Number of Documents</h4><br>
+        <div class="col-md-6 dashboardnumbers">
+            <div class="col-md-12 text-center" id="documentImg">
+              <img  src="image/newuserdoc.png" alt="documents">
+         </div>
+         <div class="col-md-12 text-center"> <strong>1245</strong><br> No.Of.Documents </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <h4 class="text-left">Number of Active users</h4><br>
+        <div class="col-md-6 dashboardnumbers">
+            <div id="activeUserImg" class="col-md-12 text-center" > 
+              <img src="users.png" alt="user"></div>
+            <div class="text-center col-md-12"> <strong>150</strong><br>
+              
+              No.Of.Active users </div>
+          </div>      </div>
+    </div>
+    <div class="col-md-8" id="col-right">
+      <div class="row">
+        <h3>Recently added documents</h3>
+        <div class="recentlyAddedDocuments">
+          <h4>Estimation of Internet Node Location by Latency Measurements</h4>
+          <p>Komosny, D., Voznak, M., Ganeshan, K., and Sathu, H. (2015). Estimation of Internet Node Location by Latency Measurements - The Underestimation Problem. Information Technology and Control, 2015, vol. 44, no. 3, pp. 279-286. ISSN: 1392- 124X.</p>
+        </div><br>
+        <div class="recentlyAddedDocuments">
+          <h4> IETF 6LoWPAN and Sensor Networking</h4>
+          <p>Cervenka, V., Komosny, D., and Ganeshan, K. (2011). IETF 6LoWPAN and Sensor Networking. 6th International Conference on Teleinformatics. Brno University of Technology, Dolni Morava, Czech Republic. 2 - 4 February, 2011. pp 69-73.</p>
+        </div><br>
+        <div class="recentlyAddedProjects">
+        <h4> Topology aware feedback transmission for real-time control protocol</h4>
+        <p>Burget, R., Komosny, D., and Ganeshan, K. (2012). Topology aware feedback transmission for real-time control protocol. Journal of Network and Computer Applications. 35/2 : 723-730. </p>
+      </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- footer -->
+<footer> <small> &copy; 2017 All rights reserved to Edenz colleges</small> </footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<script type="text/javascript">
+$(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</body>
+</html>

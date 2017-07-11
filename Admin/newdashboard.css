@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+main{
+	height:100vh;
+}
+#titleContainer {
+	background-color: #201e98;
+	border-color: #7473bd;
+	color: #FCFCFC;
+}
+#navigationBar {
+	margin: 0;
+	padding: 0;
+	border-radius: 0;
+	background: #646464;
+}
+.dropdown .dropdown-menu>li >a {
+	color: #F9F9F9;
+}
+.dashboardnumbers
+{
+	background-color: #E3DEDE;
+	
+}
+#documentImg {
+	/*background-color: #C6E7F3;
+	width: 60px;
+	height: 100px;
+	margin: 15px;
+	border: 1px;
+	border-style: solid;
+	border-color: #88B5FB;
+	border-radius: 50px;*/
+	padding-bottom: 5px;
+	padding-left: 30px;
+}
+
+
+.noOfUsers {
+	background-color: #E3DEDE;
+	width: 300px;
+	height: 150px;
+	margin: 10px;/*border:1px;
+	border-style:solid;
+	border-color: #0D6EE1;*/
+}
+#activeUserImg {
+	/*background-color: #C6E7F3;
+	width: 40px;
+	height: 90px;
+	margin: 5px;
+	border: 1px;
+	border-style: solid;
+	border-color: #88B5FB;
+	border-radius: 50px;*/
+	padding-bottom: 25px;
+	padding-left: 22px;
+}
+footer {
+	height: 60px;
+	line-height: normal;
+	text-align: center;
+	background-color: #D9D6D6;
+	align-content: center;
+}
