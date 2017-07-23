@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+#titleContainer {
+  background-color: #201e98;
+  border-color: #7473bd;
+  color:#FCFCFC;
+ }
+
+#navigationBar
+{
+margin:0;
+padding:0;
+border-radius:0;
+background:#646464;
+
+}
+.dropdown .dropdown-menu>li >a
+{
+	color: #F9F9F9;
+	
+	
+}
+form .btn .btn-default
+{
+	align-content:center;
+}
