@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 #titleContainer {
   background-color: #201e98;
   border-color: #7473bd;
@@ -14,11 +15,38 @@ border-radius:0;
 background:#646464;
 
 }
+#logo{
+	padding:0;
+}
+#logo img{
+	height:50px;
+}
+
+#navItems ul li{
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+#navItems ul li a
+{
+	color:#FCFCFC;
+}
+
+
+#navItems ul li a:hover
+{
+	color:#C9C3C3;
+	
+}
 .dropdown .dropdown-menu>li >a
 {
 	color: #F9F9F9;
 	
 	
+}
+form .btn .btn-default
+{
+	align-content:center;
 }
 footer {
 	height: 60px;
