@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Add User</title>
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="adduser.css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit Staff</title>
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="edit staff.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-</head>
-<body>
-<div id="titleContainer" class="container-fluid">
+  </head>
+  <body>
+  <div id="titleContainer" class="container-fluid">
   <div class="row">
     <h3 class="text-left col-md-6">Edenz Reasearch Bank Manager</h3>
   </div>
 </div>
-<!-- NavBar -->
-
 <nav id="navigationBar" class="navbar navbar-inverse">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,17 +36,18 @@
         <li><a href="edituser.html"><img border="0" alt="edituser" src="image/edit-user.png" data-toggle="tooltip" data-placement="bottom" title="Edit User"> </a></li>
         <li><a href="add document.html"><img border="0" alt="adddoc" src="image/add-docs32.png" data-toggle="tooltip" data-placement="bottom" title="Add Document"> </a></li>
         <li><a href="edit document.html"><img border="0" alt="editdoc" src="image/edit-docs.png" data-toggle="tooltip" data-placement="bottom" title="Edit Document"> </a></li>
+        <li><a href="addstaff.html"><img border="0" alt="editdoc" src="image/add staff.png" data-toggle="tooltip" data-placement="bottom" title="Add Staff"> </a></li>
+        <li><a href="edit staff.html"><img border="0" alt="editdoc" src="image/edit staff.png" data-toggle="tooltip" data-placement="bottom" title="Edit Staff"> </a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Login.html"><img border="0" alt="Logout" src="image/logout-32.png" data-toggle="tooltip" data-placement="bottom" title="Logout"> </a></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-<div class="container-fluid">
-  <h3 class="text-center">Add User</h3>
+    </div>
+    </nav>
+    <div class="container-fluid">
+    
+  <h3 class="text-center">Edit Staff</h3>
   <form class="col-md-6 col-md-offset-3">
     <div class="form-group">
       <label for="firstName">Firstname</label>
@@ -71,32 +70,29 @@
       </select>
     </div>
     <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" class="form-control" id="email">
+      <label for="designation">Designation</label>
+      <input type="text" class="form-control" id="designation">
     </div>
     <div class="form-group">
-      <label for="password">Password</label>
-      <input type="password" class="form-control" id="password">
-    </div>
-    <div class="form-group">
-      <label for="rePassword">Retype-Password</label>
-      <input type="password" class="form-control" id="rePassword">
+      <label for="profile">Staff Profile</label>
+      <input type="text" class="form-control" id="profile">
     </div>
     
       <button type="submit" class="btn btn-primary btn-block" id="submit">Submit</button>
    
   </form>
-</div>
+  </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.2.min.js"></script> 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-1.11.2.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script> 
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="../js/bootstrap.js"></script>
+     <script src="js/bootstrap.js"></script> 
 <script type="text/javascript">
 $(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 </script>
-</body>
+  </body>
 </html>
